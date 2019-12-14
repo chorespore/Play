@@ -14,7 +14,7 @@ public class Leet105 {
 
         int[] preLeft = Arrays.copyOfRange(preorder, 1, pivot);
         int[] preRight = Arrays.copyOfRange(preorder, pivot, preorder.length);
-        int[] inLeft = Arrays.copyOfRange(inorder, 0, pivot);
+        int[] inLeft = Arrays.copyOfRange(inorder, 0, pivot - 1);
         int[] inRight = Arrays.copyOfRange(inorder, pivot, inorder.length);
 
         TreeNode root = new TreeNode(preorder[0]);
