@@ -9,7 +9,6 @@ public class Leet145 {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         helper(root, res);
-
         return res;
     }
 
