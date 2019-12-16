@@ -12,11 +12,7 @@ public class Leet129 {
         helper(root, new ArrayList<>());
         int sum = 0;
         for (List<Integer> digits : nums) {
-            int cur = 0;
-            for (int digit : digits) {
-                cur = cur * 10 + digit;
-            }
-            sum += cur;
+            sum += digits.stream().reduce((aac, i) -> aac * 10 + i).get();
         }
         return sum;
     }
