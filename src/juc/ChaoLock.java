@@ -1,4 +1,4 @@
-package main;
+package juc;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
