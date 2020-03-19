@@ -1,8 +1,11 @@
 package inter;
 
 public class Accend {
+    static volatile int n = 9;
 
     public static void main(String[] args) {
+
+        n++;
 
         int i = 1;
         int j = i++;
